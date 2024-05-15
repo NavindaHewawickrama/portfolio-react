@@ -51,7 +51,7 @@ export const NavBar = () => {
                         </div>
                         <button className="vvd" onClick={() => console.log('connect')}>
                             <span>
-                                Lets' connect
+                                Lets' connect now
                             </span>
                         </button>
                     </span>
