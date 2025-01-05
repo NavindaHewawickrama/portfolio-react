@@ -49,8 +49,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline" ><h1 style={{ color: '#fff' }}>Welcome !!</h1></span>
             <h1>{`Hi I'm Navinda `}<span className='wrap'><br></br>{text}</span></h1>
-            <p>My name is Navinda Hewawickrama. I am undergraduate at the University of Ruhuna studying Computer Science for my bachelors.
-            I am currently in my third year. I am passionate about Cyber Security, Machine Learning and Web development
+            <p>Hi I am Nainda hEwawickrama
             </p>
             
             {/* <button onClick={() => console.log('connect')}>Let's connect<ArrowRightCircle size={25} /></button>  */}
