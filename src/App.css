@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 
-p, a, li, button, ul {
+ a, li, button, ul {
   margin: 0;
   padding: 0;
   line-height: normal;
@@ -52,10 +52,10 @@ a:hover {
   text-decoration: none;
 }
 
-img {
+/* img {
   width: auto;
   height: auto;
-}
+} */
 
 button {
   border: 0;
@@ -676,8 +676,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
-{/*crazy theme*/}
-
+/*crazy theme*/
 /* fontSize: {
   sm: '0.750rem',
   base: '1rem',
