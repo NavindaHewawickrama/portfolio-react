@@ -1,5 +1,5 @@
-/************ Custom Font ************/
-@font-face {
+/* *********** Custom Font ************/
+/* @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Bold.ttf');
 	font-weight: 700;
@@ -13,9 +13,9 @@
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Book.ttf');
 	font-weight: 400;
-}
+} */
 /************ Default Css ************/
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -57,7 +57,7 @@ a:hover {
   height: auto;
 } */
 
-button {
+/* button {
   border: 0;
   background-color: transparent;
 }
@@ -79,9 +79,9 @@ p.success {
 
 p.danger {
 	color: red;
-}
+} */
 /************ Navbar Css ************/
-nav.navbar {
+/* nav.navbar {
   padding: 18px 0;
   position: fixed;
   width: 100%;
@@ -233,17 +233,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
-}
+} */
 
 /******************************************/
 
 /***Banner css*/
 
-.banner {
+/* .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 260px 0 100px 0; */
   /*background-image: url('./assets/img/b4.jpg');*/
-  background-color: #0000007b;
+  /* background-color: #0000007b;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -252,10 +252,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: justify;
   font-weight: 700;
   letter-spacing: 0.8px;
-  padding: 8px 10px;
+  padding: 8px 10px; */
   /*background: #fcfcfc;
   border: 1px solid #ffffff;*/
-  font-size: 20px;
+  /* font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
 }
@@ -349,11 +349,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 /***************** Skills *****************/
 
-.skill{
+/* .skill{
   padding: 0 0 50px 0;
   position: relative;
 }
@@ -397,10 +397,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   z-index: -4;
   background-color: #181401;
-}
+} */
 
 /*****************Project css ****************/
-.project {
+/* .project {
   padding: 80px 0;
   position: relative;
   background-color: black;
@@ -523,10 +523,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
-}
+} */
 
 /**************Conatct css ***************/
-.contact {
+/* .contact {
   background: #ff004d;
   padding: 60px 0 200px 0;
 }
@@ -598,7 +598,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /**************Footer css ***************/
-.footer {
+/* .footer {
   padding: 0 0 50px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
@@ -674,7 +674,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
-}
+}  */ 
 
 /*crazy theme*/
 /* fontSize: {

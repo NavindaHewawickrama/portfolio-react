@@ -3,12 +3,13 @@
     margin: 0;
     padding: '5vh';
     box-sizing: border-box;
-  }
+}
 
 body {
     position: relative;
     background-color: #110E0E !important;
     font-family: 'Poppins';
+    /*not working. put the poppins font here*/
     font-size: 24px;
 }
 
@@ -16,139 +17,144 @@ body {
 
 
 /*********** left column *****************/
-.leftColumn{
-    width: 70vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
-.logo{
-    width: 350px;
-    height: 130px;
-    position: absolute;
-    top: 90px;
-    left: 120px;
-    color: #FF3838;
-    font-size: 5rem;
-    /* border: solid;
-    border-radius: 20px;
-    border-color: #FF3838; */
-}
 
-.name{
-    width: 50vw;
-    height: 5vh;
-    color: #FF3838;
-    font-size: 6rem;
-    position: absolute;
-    top: 57vh;
-    left: 20vw;
-    text-align: left;
-    line-height: 1.2;
-}
 
-.imageOne{
-    z-index: 5;
-    position: absolute;
-    top: 20vh;
-    left: 60vw;
-    border: #FF3838 5px solid;
-    padding: 10px;
-}
+/* For medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1440px) {
 
-.leftText1{
-    width: 40vw;
-    height: 5vh;
-    position: absolute;
-    bottom: 12vh;
-    left: 25vw;
-    color: #FF3838;
-    text-align: left;
-}
+    .leftColumn {
+        width: 70vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
-.modeIcon{
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    bottom: 5vh;
-    left: 2vw;
+    .logo {
+        width: 350px;
+        height: 130px;
+        position: absolute;
+        top: 90px;
+        left: 120px;
+        color: #FF3838;
+        font-size: 5rem;
+    }
+
+    .name {
+        width: 50vw;
+        height: 5vh;
+        color: #FF3838;
+        font-size: 10vw;
+        position: absolute;
+        top: 59vh;
+        left: 13vw;
+        text-align: left;
+        line-height: 0.5;
+    }
+
+    .imageOne {
+        z-index: 5;
+        position: absolute;
+        top: 20vh;
+        left: 60vw;
+        border: #FF3838 5px solid;
+        padding: 10px;
+    }
+
+    .leftText1 {
+        width: 40vw;
+        height: 5vh;
+        position: absolute;
+        bottom: 12vh;
+        left: 25vw;
+        color: #FF3838;
+        text-align: left;
+    }
+
+    .modeIcon {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        bottom: 5vh;
+        left: 2vw;
+    }
 }
 
 /************right column *****************/
 
+@media (min-width: 768px) and (max-width: 1440px) {
+    .rightColumn {
+        width: 30vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #9E0000;
+    }
 
-.rightColumn{
-    width: 30vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #9E0000;
-}
 
+    .switch {
+        position: absolute;
+        display: inline-block;
+        width: 70px;
+        height: 30px;
+        top: 5vh;
+        right: 2vw;
+    }
 
-.switch {
-    position: absolute;
-    display: inline-block;
-    width: 70px;
-    height: 30px;
-    top: 5vh;
-    right: 2vw;
-}
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
 
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 20px;
+    }
 
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-    border-radius: 20px;
-}
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 25px;
+        width: 25px;
+        left: 3px;
+        bottom: 2px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
 
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 25px;
-    width: 25px;
-    left: 3px;
-    bottom: 2px;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 50%;
-}
+    input:checked+.slider {
+        background-color: #FF3838;
+    }
 
-input:checked + .slider {
-    background-color: #FF3838;
-}
+    input:checked+.slider:before {
+        transform: translateX(39px);
+    }
 
-input:checked + .slider:before {
-    transform: translateX(39px);
-}
+    .toggleSwitch p {
+        font-size: 0.85rem;
+        color: #110E0E;
+        position: absolute;
+        top: 4vh;
+        right: 1vw;
+    }
 
-.toggleSwitch p{
-    font-size: 0.85rem;
-    color: #110E0E;
-    position: absolute;
-    top: 4vh;
-    right: 1vw;
-}
-
-.alias{
-    font-size: 0.75rem;
-    color: #110E0E;
-    position: absolute;
-    bottom: 1vh;
-    right: 1vw;
-    line-height: 0.5;
+    .alias {
+        font-size: 0.75rem;
+        color: #110E0E;
+        position: absolute;
+        bottom: 1vh;
+        right: 1vw;
+        line-height: 0.5;
+    }
 }
