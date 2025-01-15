@@ -19,8 +19,8 @@ const Home = () => {
                     <img
                         alt='profile-image'
                         src={imageOne}
-                        width="300px"
-                        height="400px"
+                        width="250vw"
+                        height="350vh"
                     />
                 </div>
                 <div className='name'>
