@@ -1,0 +1,12 @@
+.navBar{
+    width: 100vw;
+    height: 8vh;
+    background-color: #626262;
+}
+
+
+.navBarLogo{
+    color: #FF3838;
+    float: left;
+    font-size: 3rem;
+}

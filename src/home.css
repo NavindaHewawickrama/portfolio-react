@@ -8,9 +8,9 @@
 body {
     position: relative;
     background-color: #110E0E !important;
-    font-family: 'Poppins';
     /*not working. put the poppins font here*/
     font-size: 24px;
+    height: 200vh;
 }
 
 /**********Columns****************/
@@ -18,11 +18,8 @@ body {
 
 /*********** left column *****************/
 
-
-
-/* For medium screens (tablets) */
-@media (min-width: 768px) and (max-width: 1440px) {
-
+/*For large screens*/
+@media (min-width: 1441px) {
     .leftColumn {
         width: 70vw;
         height: 100vh;
@@ -38,18 +35,84 @@ body {
         top: 90px;
         left: 120px;
         color: #FF3838;
-        font-size: 5rem;
+        font-size: 5vw;
     }
 
     .name {
         width: 20vw;
         height: 5vh;
         color: #FF3838;
-        font-size: 7vw;
+        font-size: 5vw;
         position: absolute;
         top: 62vh;
-        left: 5vw;
+        left: 10vw;
+        line-height: 0.5;
+    }
+
+    .leftText1 {
+        width: 58vw;
+        height: 5vh;
+        position: absolute;
+        font-size: 1.3vw;
+        bottom: 14vh;
+        left: 11vw;
+        color: #FF3838;
         text-align: left;
+    }
+
+    .imageOne {
+        z-index: 5;
+        position: absolute;
+        top: 20vh;
+        left: 60vw;
+        border: #FF3838 5px solid;
+        padding: 10px;
+    }
+
+    #imageOne {
+        width: 15vw;
+        height: 45vh;
+    }
+
+    .modeIcon {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        bottom: 5vh;
+        left: 2vw;
+    }
+
+}
+
+/* For medium screens */
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    .leftColumn {
+        width: 70vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .logo {
+        width: 350px;
+        height: 130px;
+        position: absolute;
+        top: 90px;
+        left: 7vw;
+        color: #FF3838;
+        font-size: 6vw;
+    }
+
+    .name {
+        width: 20vw;
+        height: 5vh;
+        color: #FF3838;
+        font-size: 6vw;
+        position: absolute;
+        top: 62vh;
+        left: 10vw;
         line-height: 0.5;
     }
 
@@ -62,21 +125,94 @@ body {
         padding: 10px;
     }
 
+    #imageOne {
+        width: 17vw;
+        height: 45vh;
+    }
+
+
     .leftText1 {
         width: 58vw;
         height: 5vh;
         position: absolute;
-        bottom: 14vh;
-        left: 10vw;
+        font-size: 1.3vw;
+        bottom: 13vh;
+        left: 11vw;
         color: #FF3838;
         text-align: left;
     }
 
     .modeIcon {
-        width: 35px;
-        height: 35px;
+        width: 15px;
+        height: 15px;
         position: absolute;
-        bottom: 5vh;
+        bottom: 6vh;
+        left: 2vw;
+    }
+}
+
+/* For medium screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .leftColumn {
+        width: 70vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .logo {
+        width: 350px;
+        height: 130px;
+        position: absolute;
+        top: 90px;
+        left: 7vw;
+        color: #FF3838;
+        font-size: 6vw;
+    }
+
+    .name {
+        width: 20vw;
+        height: 5vh;
+        color: #FF3838;
+        font-size: 6vw;
+        position: absolute;
+        top: 62vh;
+        left: 10vw;
+        line-height: 0.5;
+    }
+
+    .imageOne {
+        z-index: 5;
+        position: absolute;
+        top: 20vh;
+        left: 60vw;
+        border: #FF3838 5px solid;
+        padding: 10px;
+    }
+
+    #imageOne {
+        width: 200px;
+        height: 280px;
+    }
+
+    .leftText1 {
+        width: 58vw;
+        height: 5vh;
+        position: absolute;
+        font-size: 1.3vw;
+        bottom: 16vh;
+        left: 11vw;
+        color: #FF3838;
+        text-align: left;
+    }
+
+    .modeIcon {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        bottom: 6vh;
         left: 2vw;
     }
 }
@@ -84,7 +220,7 @@ body {
 /************right column *****************/
 
 /*for large sizes*/
-@media (min-width: 1440px){
+@media (min-width: 1441px) {
     .rightColumn {
         width: 30vw;
         height: 100vh;
@@ -159,7 +295,7 @@ body {
 }
 
 /*for medium screen sizes*/
-@media (min-width: 768px){
+@media (min-width: 1025px) and (max-width: 1440px) {
     .rightColumn {
         width: 30vw;
         height: 100vh;
@@ -221,6 +357,83 @@ body {
         font-size: 0.85rem;
         color: #110E0E;
         position: absolute;
+        top: 5vh;
+        right: 0.75vw;
+    }
+
+    .alias {
+        font-size: 0.75rem;
+        color: #110E0E;
+        position: absolute;
+        bottom: 1vh;
+        right: 1vw;
+        line-height: 0.5;
+    }
+}
+
+/*for tablet screen sizes*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .rightColumn {
+        width: 30vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #9E0000;
+    }
+
+
+    .switch {
+        position: absolute;
+        display: inline-block;
+        width: 60px;
+        height: 20px;
+        top: 5vh;
+        right: 2vw;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 20px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 15px;
+        left: 3px;
+        bottom: 2px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+    input:checked+.slider {
+        background-color: #FF3838;
+    }
+
+    input:checked+.slider:before {
+        transform: translateX(39px);
+    }
+
+    .toggleSwitch p {
+        font-size: 0.65rem;
+        color: #110E0E;
+        position: absolute;
         top: 4vh;
         right: 1vw;
     }
@@ -233,4 +446,12 @@ body {
         right: 1vw;
         line-height: 0.5;
     }
+}
+
+/******************content section******************/
+.content {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 100vh;
 }

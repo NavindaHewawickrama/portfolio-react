@@ -3,6 +3,7 @@ import './home.css';
 import { Tab } from 'react-bootstrap';
 import imageOne from './assets/img/AM2_0259.jpg'
 import modeIcon from './assets/icons/night-day.svg'
+import ContentPage from './components/contentPage';
 
 
 
@@ -21,17 +22,18 @@ const Home = () => {
                         src={imageOne}
                         width="250vw"
                         height="350vh"
+                        id='imageOne'
                     />
                 </div>
                 <div className='name'>
-                    <p>NAVINDA <br /> &nbsp; HEWAWICKRAMA</p>
+                    <p>NAVINDA <br /> &nbsp;&nbsp; HEWAWICKRAMA</p>
                 </div>
                 <div className='leftText1'>
                     Hello ! I am an undergraduate at the University of Ruhuna and an Associate Software Engineer.
                 </div>
 
                 <div className='modeIcon'>
-                    <img src={modeIcon} alt="dark-light-mode-icon" />
+                    <img src={modeIcon} alt="dark-light-mode-icon" width={30} />
                     {/* turn the color red of the above icon */}
                 </div>
             </div>
@@ -53,6 +55,12 @@ const Home = () => {
                     <p>Hermes</p>
                 </div>
             </div>
+
+            {/* content */}
+            <div className='content'>
+                <ContentPage />
+            </div>
+
         </div>
     )
 
