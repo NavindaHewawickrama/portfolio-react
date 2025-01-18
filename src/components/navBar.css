@@ -6,7 +6,19 @@
 
 
 .navBarLogo{
-    color: #FF3838;
+    color: #110E0E;
     float: left;
     font-size: 3rem;
+}
+
+.navBarItems{
+    color: #110E0E;
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+.navBarItems .navBarItem{
+    margin: 0 1vw;
+    font-size: 1.5rem;
 }
