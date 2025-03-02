@@ -5,10 +5,18 @@
 }
 
 
-.navBarLogo{
+.navBarLogo img{
     color: #110E0E;
     float: left;
-    font-size: 3rem;
+    margin-left: auto;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.4s
+}
+
+.navBarLogo img:hover{
+    transform: scale(1.5);
 }
 
 .navBarItems{
@@ -16,9 +24,23 @@
     float: right;
     display: flex;
     flex-direction: row;
+    margin-right: 40px;
 }
 
 .navBarItems .navBarItem{
     margin: 0 1vw;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #110E0E;
+    text-decoration: none;
+    padding: 15px;
+    transition: color 0.4s, transform 0.2s;
+
 }
+
+.navBarItems .navBarItem:hover {
+    color: red; /* Change text color */
+    
+}
+
+

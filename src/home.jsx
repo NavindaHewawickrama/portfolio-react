@@ -4,6 +4,7 @@ import { Tab } from 'react-bootstrap';
 import imageOne from './assets/img/AM2_0259.jpg'
 import modeIcon from './assets/icons/night-day.svg'
 import ContentPage from './components/contentPage';
+import logo from './assets/img/logo.png';
 
 
 
@@ -14,7 +15,7 @@ const Home = () => {
             {/* black left side */}
             <div className='leftColumn'>
                 <div className='logo'>
-                    navinda
+                    <img src={logo} width={500} height={300}/>
                 </div>
                 <div className='imageOne'>
                     <img
@@ -33,7 +34,7 @@ const Home = () => {
                 </div>
 
                 <div className='modeIcon'>
-                    <img src={modeIcon} alt="dark-light-mode-icon" width={30} />
+                    <img src={modeIcon} alt="dark-light-mode-icon" width={25} />
                     {/* turn the color red of the above icon */}
                 </div>
             </div>

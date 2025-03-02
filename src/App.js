@@ -2,12 +2,15 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './home';
+import { BrowserRouter } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>
     </div>
   );
 }
